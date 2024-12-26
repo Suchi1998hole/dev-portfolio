@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchitra Hole - Data Science & Tech Portfolio</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        main {
+            padding-top: 60px;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .skill-tag {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 0.25rem 0.5rem;
+            border-radius: 20px;
+            margin: 0.25rem;
+            font-size: 0.9rem;
+        }
+        .project-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .social-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: #3498db;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Suchitra Hole</h1>
+            <p>Data Scientist | Software Developer</p>
+            <p>Boston, MA | suchitrahole1998@gmail.com</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skill-container"></div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <h3>Senior Developer | LTIMindtree</h3>
+                <p>Jan 2021 — Jun 2024</p>
+                <ul>
+                    <li>Architected robust APIs in MuleSoft, reducing data processing time by 30%.</li>
+                    <li>Implemented ETL pipelines and MuleSoft API integration for improved efficiency.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Technical Lead | Eyeot Tech Solutions</h3>
+                <p>Aug 2020 — Jan 2021</p>
+                <ul>
+                    <li>Developed a cross-platform React Native application with Firebase integration.</li>
+                    <li>Designed efficient data pipelines for home automation analytics.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Master of Science in Data Science</strong><br>
+            Khoury College of Computer Sciences, Northeastern University<br>
+            Sept 2024 — May 2026</p>
+            <p><strong>Bachelor of Engineering, Computer Science</strong><br>
+            Dr. D.Y.Patil School of Engineering<br>
+            Aug 2016 — Apr 2020</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="project-container"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: suchitrahole1998@gmail.com</p>
+            <p>Location: Boston, MA</p>
+            <div class="social-links">
+                <a href="https://github.com/TimmyChan" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/suchitra-hole" target="_blank">LinkedIn</a>
+                <a href="https://MathtoData.com" target="_blank">Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Suchitra Hole. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for dynamic content and interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Skills
+            const skills = [
+                "SQL", "Python", "Java", "C++", "JavaScript", "React.js", "Next.js",
+                "Power BI", "Tableau", "PySpark", "AWS", "Azure", "Docker", "Kubernetes",
+                "Machine Learning", "Data Analysis", "API Development"
+            ];
+            const skillContainer = document.getElementById('skill-container');
+            skills.forEach(skill => {
+                const skillTag = document.createElement('span');
+                skillTag.classList.add('skill-tag');
+                skillTag.textContent = skill;
+                skillContainer.appendChild(skillTag);
+            });
+
+            // Projects
+            const projects = [
+                {
+                    title: "F1 Race Prediction and Analysis",
+                    description: "Developed a predictive model for Formula 1 race finishers using Python, achieving 87.9% accuracy.",
+                    technologies: ["Python", "Pandas", "Scikit-learn", "Matplotlib", "SQLAlchemy"]
+                },
+                {
+                    title: "Stock Market Prediction Using Deep Learning",
+                    description: "Designed a stock prediction algorithm using LSTM networks, achieving a low RMSE of 6.68.",
+                    technologies: ["Python", "TensorFlow", "Keras", "NumPy", "Pandas", "LSTM", "GRU"]
+                }
+            ];
+            const projectContainer = document.getElementById('project-container');
+            projects.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.classList.add('project-card');
+                projectCard.innerHTML = `
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <p><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>
+                `;
+                projectContainer.appendChild(projectCard);
+            });
+
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
