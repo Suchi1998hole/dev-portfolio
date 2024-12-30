@@ -1,11 +1,16 @@
 /* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    margin: 0;
-    padding: 0;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding-top: 60px;
 }
 
 /* Navigation */
@@ -39,16 +44,23 @@ nav ul li a:hover {
     color: #3498db;
 }
 
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Sections */
 section {
-    padding: 4rem 2rem;
-    margin: 2rem 0;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 section.visible {
@@ -56,62 +68,132 @@ section.visible {
     transform: translateY(0);
 }
 
-/* Headings */
-h1, h2 {
-    color: #2c3e50;
+/* Education */
+.education-list {
+    list-style-type: none;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
 }
 
-h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+.education-info {
+    flex: 1;
 }
 
-/* Skill tags */
+.education-year {
+    white-space: nowrap;
+    color: #666;
+    margin-left: 1rem;
+}
+
+/* Projects */
+.project-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.project-item {
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f6f8fa;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.project-content {
+    padding: 1rem;
+    display: none;
+    background-color: #fff;
+}
+
+.project-item:hover .project-content {
+    display: block;
+}
+
+.github-link svg {
+    fill: #24292e;
+    transition: fill 0.3s ease;
+}
+
+.github-link:hover svg {
+    fill: #0366d6;
+}
+
+/* Skills */
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 .skill-tag {
-    display: inline-block;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #e1e4e8;
+    color: #24292e;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
-    margin: 0.25rem;
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
 .skill-tag:hover {
+    background-color: #0366d6;
+    color: #fff;
     transform: scale(1.05);
 }
 
-/* Project cards */
-.project-card {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 1rem;
+/* Headings */
+h1 {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    transition: transform 0.3s ease;
+    color: #2c3e50;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
 }
 
-/* Contact section */
+h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact */
+.social-links {
+    margin-top: 1rem;
+}
+
 .social-links a {
     display: inline-block;
     margin-right: 1rem;
-    color: #3498db;
+    color: #0366d6;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #2c3e50;
+    color: #24292e;
 }
 
 /* Animations */
