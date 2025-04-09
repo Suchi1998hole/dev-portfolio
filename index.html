@@ -1,135 +1,160 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suchitra Hole - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Suchitra Hole - Portfolio</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<main>
+<section class="animate-fadeInUp" id="about">
+<h1>Suchitra Hole</h1>
+<p>Passionate Data Science professional with a robust foundation in Java development and hands-on experience in data analysis, predictive modeling, and machine learning. Skilled in transitioning development expertise into data-centric roles, leveraging diverse programming and analytical tools to deliver impactful solutions.</p>
+</section>
+<section class="animate-fadeInUp" id="education">
+<h2>Education</h2>
+<ul class="education-list">
+<li>
+<div class="education-item">
+<div class="education-info">
+<h3>Khoury College of Computer Sciences, Northeastern University</h3>
+<p>Master of Science in Data Science</p>
+</div>
+<p class="education-year">Sept 2024 — May 2026</p>
+</div>
+</li>
+<li>
+<div class="education-item">
+<div class="education-info">
+<h3>Dr. D.Y.Patil School of Engineering</h3>
+<p>Bachelor of Engineering</p>
+</div>
+<p class="education-year">Aug 2016 — Apr 2020</p>
+</div>
+</li>
+</ul>
+</section>
+<section class="animate-fadeInUp" id="projects">
+<h2>Projects</h2>
+<div class="project-list">
+<div class="project-item">
+<div class="project-header">
+<h3>Formula 1 Race Prediction Model</h3>
+<div class="project-links">
+<a class="github-link" href="https://github.com/Suchi1998hole/f1" target="_blank">
+<svg height="24" viewbox="0 0 16 16" width="24">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="project-content">
+<p>Predict the top three finishers in Formula One races using machine learning models. It utilizes historical F1 data from 1950 to 2023, employing various data analysis and machine learning techniques to forecast race outcomes.</p>
+</div>
+</div>
+<div class="project-item">
+<div class="project-header">
+<h3>Stock Prediction Algorithm</h3>
+<div class="project-links">
+<a class="github-link" href="https://github.com/Suchi1998hole/stocks" target="_blank">
+<svg height="24" viewbox="0 0 16 16" width="24">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="project-content">
+<p>This project implements a Long Short-Term Memory (LSTM) neural network to predict stock prices Example: for Google (GOOG). The model uses historical stock data to forecast future prices.</p>
+</div>
+</div>
+<div class="project-item">
+<div class="project-header">
+<h3>Git Scrapper: GitHub Trending Repository Analysis</h3>
+<div class="project-links">
+<a class="github-link" href="https://github.com/Suchi1998hole/git-scrapper" target="_blank">
+<svg height="24" viewbox="0 0 16 16" width="24">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="project-content">
+<p>The project scrapes data from GitHub's trending page, collecting information on programming languages and fork counts for the most popular repositories. It then analyzes this data to reveal trends in language usage and community engagement.</p>
+</div>
+</div>
+<div class="project-item">
+<div class="project-header">
+<h3>EmiPAYlelo</h3>
+<div class="project-links">
+<a class="github-link" href="https://github.com/Suchi1998hole/emiPAYlelo" target="_blank">
+<svg height="24" viewbox="0 0 16 16" width="24">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="project-content">
+<p>A full-stack e-commerce platform that combines the power of Angular for a dynamic frontend with a robust Spring Boot and Hibernate JPA backend. This project delivers a seamless shopping experience with secure payment processing and intuitive user interface.</p>
+</div>
+</div>
 
-    <main>
-        <section id="about" class="animate-fadeInUp">
-            <h1>Suchitra Hole</h1>
-            <p>Passionate Data Science professional with a robust foundation in Java development and hands-on experience in data analysis, predictive modeling, and machine learning. Skilled in transitioning development expertise into data-centric roles, leveraging diverse programming and analytical tools to deliver impactful solutions.</p>
-        </section>
-
-        <section id="education" class="animate-fadeInUp">
-            <h2>Education</h2>
-            <ul class="education-list">
-                <li>
-                    <div class="education-item">
-                        <div class="education-info">
-                            <h3>Khoury College of Computer Sciences, Northeastern University</h3>
-                            <p>Master of Science in Data Science</p>
-                        </div>
-                        <p class="education-year">Sept 2024 — May 2026</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="education-item">
-                        <div class="education-info">
-                            <h3>Dr. D.Y.Patil School of Engineering</h3>
-                            <p>Bachelor of Engineering</p>
-                        </div>
-                        <p class="education-year">Aug 2016 — Apr 2020</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="projects" class="animate-fadeInUp">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Formula 1 Race Prediction Model</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Suchi1998hole/f1" target="_blank" class="github-link">
-                                <svg height="24" viewBox="0 0 16 16" width="24">
-                                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p>Predict the top three finishers in Formula One races using machine learning models. It utilizes historical F1 data from 1950 to 2023, employing various data analysis and machine learning techniques to forecast race outcomes.</p>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Stock Prediction Algorithm</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Suchi1998hole/stocks" target="_blank" class="github-link">
-                                <svg height="24" viewBox="0 0 16 16" width="24">
-                                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p>This project implements a Long Short-Term Memory (LSTM) neural network to predict stock prices Example: for Google (GOOG). The model uses historical stock data to forecast future prices.</p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Git Scrapper: GitHub Trending Repository Analysis</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Suchi1998hole/git-scrapper" target="_blank" class="github-link">
-                                <svg height="24" viewBox="0 0 16 16" width="24">
-                                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p>The project scrapes data from GitHub's trending page, collecting information on programming languages and fork counts for the most popular repositories. It then analyzes this data to reveal trends in language usage and community engagement.</p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>EmiPAYlelo</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Suchi1998hole/emiPAYlelo" target="_blank" class="github-link">
-                                <svg height="24" viewBox="0 0 16 16" width="24">
-                                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p>A full-stack e-commerce platform that combines the power of Angular for a dynamic frontend with a robust Spring Boot and Hibernate JPA backend. This project delivers a seamless shopping experience with secure payment processing and intuitive user interface.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="animate-fadeInUp">
-            <h2>Skills</h2>
-            <div id="skills-container"></div>
-        </section>
-
-        <section id="contact" class="animate-fadeInUp">
-            <h2>Contact</h2>
-            <p>Email: suchitrahole1998@gmail.com</p>
-            <p>Location: Boston, MA</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/suchitra-hole" target="_blank">LinkedIn</a>
-                <a href="https://github.com/Suchi1998hole/Suchitra" target="_blank">GitHub</a>
-            </div>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+<div class="project-item">
+<div class="project-header">
+<h3>Return2Tech</h3>
+<div class="project-links">
+<a class="github-link" href="https://github.com/Suchi1998hole/return2tech" target="_blank">
+<svg height="24" viewbox="0 0 16 16" width="24">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="project-content">
+<p>Return2Tech is a web-based platform built to support women in tech—especially those returning after a career break. The platform helps them reconnect with career opportunities by providing curated job matches, personalized roadmaps, and community support.</p>
+</div>
+</div>
+<div class="project-item">
+<div class="project-header">
+<h3>AI Arbitrage Bot</h3>
+<div class="project-links">
+<a class="github-link" href="https://github.com/Suchi1998hole/ai-arbitrage-bot" target="_blank">
+<svg height="24" viewbox="0 0 16 16" width="24">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="project-content">
+<p>This project implements a <em>Reinforcement Learning-based Arbitrage Trading Model</em>, designed to exploit price differences between Binance and Coinbase. Using <em>Deep Q-Learning</em>, the model learns an optimal trading strategy to maximize profits while managing risks.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="animate-fadeInUp" id="skills">
+<h2>Skills</h2>
+<div id="skills-container"></div>
+</section>
+<section class="animate-fadeInUp" id="contact">
+<h2>Contact</h2>
+<p>Email: suchitrahole1998@gmail.com</p>
+<p>Location: Boston, MA</p>
+<div class="social-links">
+<a href="https://linkedin.com/in/suchitra-hole" target="_blank">LinkedIn</a>
+<a href="https://github.com/Suchi1998hole/Suchitra" target="_blank">GitHub</a>
+</div>
+</section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
